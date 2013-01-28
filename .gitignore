@@ -8,3 +8,4 @@
 *.SCAN.txt
 *.UPC.txt
 *.Rout
+*.o*
