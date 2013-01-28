@@ -3,12 +3,11 @@ import re, os
 from shutil import *
 
 
-# EDIT FOR HEINZEN
-gsms=set([s.strip() for s in open("kang_DFC_13+gsms.txt")])
-assert len(gsms) == 32
-ROOT = "/nfs/01/osu6683/kang_gse25219_raw"
-DST = "/nfs/01/osu6683/kang_gse25219_raw/DFC_over13"
-RX = re.compile(r"(GSM\d+)_\S+.CEL.gz")
+gsms=set([s.strip() for s in open("heinzen_brain_gsms.txt")])
+assert len(gsms) == 93
+ROOT = "/nfs/01/osu6683/heinzen_gse30453"
+DST = "/nfs/01/osu6683/heinzen_gse30453/brain"
+RX = re.compile(r"(GSM\d+)\.CEL\.gz")
 
 n = 0
 for fname in os.listdir(ROOT):
