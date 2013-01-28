@@ -5,3 +5,6 @@
 *.ROut
 *.pyc
 .DS_*
+*.SCAN.txt
+*.UPC.txt
+*.Rout
