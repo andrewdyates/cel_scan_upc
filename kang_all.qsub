@@ -1,8 +1,8 @@
-#PBS -N heinzen2_norm
+#PBS -N kang_norm
 #PBS -l nodes=1:ppn=12
 #PBS -j oe
 #PBS -S /bin/bash
-#PBS -l walltime=72:00:00
+#PBS -l walltime=99:00:00
 
 #tdate=$(date +%%T)
 
@@ -12,4 +12,4 @@ source .bash_profile
 
 
 cd $HOME/cel_scan_upc
-R CMD BATCH heinzen_blood.R heinzen_blood.norm.Rout
+R CMD BATCH kang_all.R kang_all.norm.Rout
