@@ -9,3 +9,5 @@
 *.UPC.txt
 *.Rout
 *.o*
+rscripts
+rscripts/*
